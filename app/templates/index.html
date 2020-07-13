@@ -3,7 +3,7 @@
   <head>
     <meta charset = "UTF-8">
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel = "stylesheet" href = "insert_locations.css">
+    <link rel = "stylesheet" href = {{ url_for("static", filename = "index.css") }}>
   </head>
   <body>
     <form action = "" id = "form">
@@ -55,6 +55,6 @@
       </div>
       <input type = "submit" id = "submit_location_btn" value = "Record Location">
     </form>
-    <script src = "insert_locations.js"></script>
+    <script src = {{ url_for("static", filename = "index.js") }}></script>
   </body>
 </html>
