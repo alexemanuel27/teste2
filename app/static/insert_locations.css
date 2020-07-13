@@ -1,0 +1,19 @@
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 12%;
+}
+#fields_div {
+  border-left: 5px solid gray;
+}
+h1 {
+  color: rgb(100, 100, 100);
+}
+#submit_location_btn {
+  position: absolute;
+  left: 45%;
+  bottom: 5%;
+}
+body {
+  background: rgb(240, 240, 240);
+}
