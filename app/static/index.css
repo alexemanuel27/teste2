@@ -9,11 +9,28 @@
 h1 {
   color: rgb(100, 100, 100);
 }
+
+.locations_structured_fields {
+  position: relative;
+  left: 15%;
+}
+
+.fields_div_header {
+  position: relative;
+  left: 199%;
+}
+
+.locations_fields_fields {
+  position: relative;
+  left: 9%;
+}
+
 #submit_location_btn {
   position: absolute;
-  left: 45%;
-  bottom: 5%;
+  left: 44%;
+  bottom: 7%;
 }
 body {
   background: rgb(240, 240, 240);
 }
+

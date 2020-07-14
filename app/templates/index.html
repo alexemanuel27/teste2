@@ -6,55 +6,56 @@
     <link rel = "stylesheet" href = {{ url_for("static", filename = "index.css") }}>
   </head>
   <body>
-    <form action = "" id = "form">
+    <form onsubmit = "return checkPlaceType()" action = "" id = "form">
       <div id = "structured_location_div" class = "column">
         <h1 id = "structured_location_div_header">Structured Location</h1>
-        <div id = "country_div">
+        <div id = "country_div" class = "locations_structured_fields">
           <br>
           <label for = "country">Country:</label><br>
           <input title = "Insert the country name" id = "country" placeholder = "Examplo: Brazil" required>
         </div>
-        <div id = "country_code_div">
+        <div id = "country_code_div" class = "locations_structured_fields">
           <br>
           <label for = "country_code">Country Code:</label><br>
           <input title = "Insert the country code" id = "country_code" placeholder = "Examplo: BR" required>
         </div>
-        <div id = "place_type_div">
+        <div id = "place_type_div" class = "locations_structured_fields">
           <br>
           <label for = "place_type">Place Type:</label><br>
           <input title = "Insert the place type (country, region or city)" id = "place_type" placeholder = "Examplo: country" required>
         </div>
       </div>
       <div id = "fields_div" class = "column">
-        <h1>Locations Field</h1>
-        <div id = "name">
+        <h1 id = "fields_div_header">Locations Field</h1>
+        <div id = "name", class = "locations_fields_fields">
           <br>
           <label for = "name">Name:</label><br>
           <input id = "name">
         </div>
-        <div id = "code_div">
+        <div id = "code_div", class = "locations_fields_fields">
           <br>
           <label for = "code">Place Code:</label><br>
           <input id = "code"><br>
         </div>
-        <div id = "area_code_div">
+        <div id = "area_code_div", class = "locations_fields_fields">
           <br>
           <label for = "area_code">Area Code:</label><br>
           <input id = "area_code"><br>
         </div>
-        <div id = "nicknames">
+        <div id = "nicknames", class = "locations_fields_fields">
           <br>
           <label for = "nicknames">Nicknames:</label><br>
           <input id = "nickname"><br>
         </div>
-        <div id = "gentile_div">
+        <div id = "gentile_div", class = "locations_fields_fields">
           <br>
           <label for = "gentile">Gentile:</label><br>
           <input id = "gentile"><br>
-        </div>
       </div>
+    </div>
       <input type = "submit" id = "submit_location_btn" value = "Record Location">
     </form>
     <script src = {{ url_for("static", filename = "index.js") }}></script>
   </body>
 </html>
+
